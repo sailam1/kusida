@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: white;
+}
+#formContainer{
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+#heading{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+label{
+    font-size: large;
+    text-align: left;
+}
+input[type="text"],input[type="number"]{
+    font-size: large;
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 3px 8px 3px 8px;
+}
+input[type="submit"]{
+    color: rgb(64, 119, 64);
+    margin-top: 10px;
+    font-size: large;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

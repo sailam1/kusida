@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Village sort</title>
+        <link rel="stylesheet" href="./css/villageSortejs.css">
+    </head>
+    <body>
+        <div id="userContainer">village:<%=village%></div>
+        <table border="2" id="table1">
+            <th class="th">Name</th>
+            <th class="th">contact details</th>
+            <th class="th">amount</th>
+            <% var counter=0 %>
+            <% usernames.forEach(function(user){ %>
+            <tr onclick="focuser(this)" ondblclick="defocuser(this)">
+                <td><%= user %></td>
+                <td><%= tokenNumbers[counter] %></td>
+                <td><%= totalAmount[counter] %></td>
+            </tr>
+            <% counter=counter+1 %>
+            <% }) %>
+        </table>
+        <Div id="totalSum">remaining amount:<%=remains%></Div>
+        <div class="note">* "Click" to select/highlight</div>
+        <div class="note">* "Double Click" to deselect</div>
+        <script src="./javascript/villageSort.js"></script>
+    </body>
+</html>

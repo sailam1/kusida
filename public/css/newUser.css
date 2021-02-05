@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#formContainer{
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+#heading{
+    font-family: fantasy;
+    font-size: 40px;
+    color: rgb(138, 86, 138);
+}
+input[type="text"],input[type="number"]{
+    padding: 5px 20px 5px 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: large;
+}
+#submitButton{
+    border:none;
+    font-size: larger;
+    background-color: transparent;
+    color: rgb(138, 86, 138);
+    cursor: pointer;
+}
+#submitButton:hover{
+    border: solid;
+    border-color: rgb(138, 86, 138);
+    border-radius: 3px;
+    transition: 0.2s;
+}
+#back{
+    text-decoration: none;
+    font-size: x-large;
+    color:rgb(138, 86, 138);
+}

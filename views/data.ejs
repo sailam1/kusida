@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>amount discription</title>
+        <link rel="stylesheet" href="./css/data.css">
+    </head>
+    <body>
+        <div id="userContainer">
+            <div>Full Name: <%=fullName%></div>
+            <div>Phone Number: <%=tokenNumbers%></div>
+            <div>village: <%=village %></div>
+        </div>
+        <table border="2" id="table1">
+            <th class="th">Date</th>
+            <th class="th">credit/debit</th>
+            <th class="th">amount</th>
+            <% var counter=0 %>
+            <% money_list.forEach(function(money){ %>
+                <tr onclick="focuser(this)" ondblclick="defocuser(this)">
+                    <td><%=date_list[counter]%></td>
+                    <td><%=cod[counter]%></td>
+                    <td><%=money%></td>
+                </tr>
+                <% counter=counter+1 %>
+            <% }) %>
+        </table>
+        <div id="totalSum">total amount remaining:<%=totalSum%></div> 
+        <a id="Bhome" href="/">Return to Home Page</a>
+        <script src="./javascript/data.js"></script>
+    </body>
+</html>

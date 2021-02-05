@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: white;
+}
+#headingContainer{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+
+#linkContainer{
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+}
+a{
+    margin-bottom: 20px;
+    cursor: pointer;
+}

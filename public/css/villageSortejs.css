@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white
+}
+#userContainer{
+    font-size: x-large;
+    color: white;
+    border: 2px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    border-color: white;
+}
+#table1{
+    border: 3px;
+    border-color: white;
+    color: white;
+    font-size: x-large;
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.th{
+    color: rgb(91, 141, 91);
+    font-size: xx-large;
+}
+#totalSum{
+    font-size: xx-large;
+    margin-left: 30px;
+}
+
+.note{
+    position: relative;
+    top: 30px;
+    margin-left: 6px;
+    color: lawngreen;
+    font-size: x-large;
+}

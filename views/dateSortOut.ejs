@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date Sort Result</title>
+        <link rel="stylesheet" href="./css/dateSortOut.css">
+    </head>
+    <body>
+        <div id="userContainer">Transictions happened From Date: <%= fDate%>    To Date: <%=tDate%></div>
+        <br>
+        <table border="5" id="table1" width="100%">
+            <tr>
+                <th class="th">Name</th>
+                <th class="th">Contact Number</th>
+                <th class="th">village</th>
+                <th class="th">Remaining Amount</th>
+                <th class="th">Dates</th>
+                <th class="th">Amount</th>
+                <th class="th">credit/debit</th>
+            </tr>
+            <% final.forEach(function(user){ %>
+                <tr onclick="focuser(this)" ondblclick="defocuser(this)">
+                    <% for(var i=0;i< user.length;i++){ %>
+                        <% if(user[4]){ %>
+                            <% var rowspan=(user[4].length).toString(); %>
+                        <% }else{ %>
+                            <% var rowspan=""; %>
+                        <% } %>
+                        <% if(i< 4){ %>
+                            <td rowspan= <%= rowspan %>> <%= user[i] %> </td>
+                        <% }if(i===4){ %>
+                            <td><%= user[i][0] %></td>
+                            <td><%= user[i+1][0] %></td>
+                            <td><%= user[i+2][0] %></td>
+                            <!-- <tr>
+                                <% for(var j=1;j< user[i].length;j++){ %>
+                                    <td><%= user[i][j] %></td>
+                                <% } %>      
+                            </tr> -->
+                            <% for(var j=1;j< user[i].length;j++){ %>
+                                <tr onclick="focuser(this)" ondblclick="defocuser(this)">
+                                    <% for(var k=4;k< user.length;k++){ %>
+                                        <td><%= user[k][j] %></td>
+                                    <% } %>
+                                </tr>
+                            <% } %>
+                        <% } %>
+                    <% } %>
+                </tr>
+            <% }); %>
+        </table>
+        <Div id="totalSum">remaining amount:<%=tRemains%></Div>
+        <script src="./javascript/dateSortOut.js"></script>
+    </body>
+</html>

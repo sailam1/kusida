@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    color: white;
+}
+#center{
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+#headContainer{
+    position: absolute;
+    right: 8px;
+}
+#newUser{
+    position: relative;
+    text-decoration: none;
+    right: 2px;
+    padding: 4px 3px 4px 3px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    font-size: large;
+}
+#searchBy{
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(59, 121, 59);
+    font-size: 40px;
+    padding: 4px 3px 4px 3px;
+    top: 10px;
+    border-radius: 4px;
+}

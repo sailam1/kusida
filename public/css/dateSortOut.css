@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    color: white
+}
+#userContainer{
+    font-size: x-large;
+    color: white;
+    border: 2px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    border-color: white;
+}
+#table1{
+    border-color: white;
+    width: 100%;
+    color: white;
+    font-size: x-large;
+    margin: 0px 2px 30px 2px;
+    text-align: center;
+}
+.th{
+    color: rgb(91, 141, 91);
+    font-size: xx-large;
+}
+.tr{
+    border: solid 2px;
+    border-color: red;
+}
+#totalSum{
+    font-size: xx-large;
+    margin-left: 30px;
+}

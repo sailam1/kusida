@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>new user register</title>
+        <link rel="stylesheet" href="./css/newUser.css">
+    </head>
+    <body>
+        <div id="formContainer">
+            <div id="heading">Enter User Details</div>
+            <form action="/registered" method="POST" name="userData">
+                <input type="text" id="username" name="username" placeholder="user name"><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name"><br>
+                <input type="number" id="tokenNumber" name="tokenNumber" placeholder="phone number"><br>
+                <input type="text" id="village" name="village" placeholder="village name"><br><br><br>
+                <button id="submitButton">Register</button>
+            </form>
+            <a id="back" href="/">back</a>
+        </div>
+    </body>
+</html>
