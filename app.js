@@ -19,7 +19,7 @@ app.set("view engine","ejs");
 
 
 async function test(){
-    await mongoose.connect("mongodb+srv://sailam:sailam2000@cluster0.jquj8.mongodb.net/accont?retryWrites=true/userData",{useNewUrlParser:true,useUnifiedTopology: true});
+    await mongoose.connect("mongodb atlas connecting database link",{useNewUrlParser:true,useUnifiedTopology: true});
 }
 
 test();
